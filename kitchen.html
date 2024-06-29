@@ -342,7 +342,7 @@
         "https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/449069202_122097929438388508_4927247153765162753_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_ohc=Q_awDOylmVcQ7kNvgHi7zEo&_nc_ht=scontent-sof1-1.xx&oh=00_AYAPgbOqBc2nUbUR1hhpcE3sQwDutNejzBaTbI79krFZgw&oe=668619F1",
         "https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/449067035_122097929156388508_7989852078525322303_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_ohc=2NLBCwX4cdcQ7kNvgHo3lOD&_nc_ht=scontent-sof1-2.xx&oh=00_AYALHNXygBOfrbj9XxwUo_8NEaxl4dCLHCfRPse2e33AOA&oe=6686150C",
       ];
-      const gallery = document.getElementById("gallery");
+      const galleryKit = document.getElementById("gallery");
 
       urls.forEach((url, index) => {
         const gridItem = document.createElement("div");
@@ -357,8 +357,7 @@
         thumb.appendChild(img);
         trendingItem.appendChild(thumb);
         gridItem.appendChild(trendingItem);
-        gallery.appendChild(gridItem);
-        console.log(index);
+        galleryKit.appendChild(gridItem);
       });
       setTimeout(function () {
         $(".loader").fadeToggle();

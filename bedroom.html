@@ -309,7 +309,7 @@
         "https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/449311677_122097941594388508_2844084901823129993_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=7VSPxQSL6AQQ7kNvgGDcBEB&_nc_ht=scontent-sof1-2.xx&oh=00_AYDexC968KPf2RKzmxoHSJRhdIuxTv8nAflMJ4TGobaqfg&oe=66861622",
         "https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/448943077_122097941306388508_3553446213453603033_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=XosM9HoMss4Q7kNvgH9kLtQ&_nc_ht=scontent-sof1-1.xx&oh=00_AYDshlQQypDv4YX3DalW3tPuQD8VdDdkG6OmnDtOVvOnrw&oe=66860BDF",
         "https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/449316356_122097941882388508_312119947780795034_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=0XQOLqZIHEIQ7kNvgGUyP20&_nc_ht=scontent-sof1-2.xx&gid=A1KRa3ufvGsmoy5NUgguQ4T&oh=00_AYCcCDqD-MwJ3Ogc9cmU4TVdhHOD1WcFMC91GD5gVPy7Dw&oe=668609CA",
-        
+
       ];
       const gallery = document.getElementById("gallery-bedroom");
 
@@ -327,7 +327,6 @@
         trendingItem.appendChild(thumb);
         gridItem.appendChild(trendingItem);
         gallery.appendChild(gridItem);
-        console.log(index);
       });
       setTimeout(function () {
         $(".loader").fadeToggle();
@@ -340,7 +339,6 @@
 
       var elem = document.querySelector(".grid");
       var iso = new Isotope(elem, {
-        // options
         itemSelector: ".grid-item",
         layoutMode: "masonry",
       });
