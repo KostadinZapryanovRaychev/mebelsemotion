@@ -42,10 +42,10 @@ function sendEmailWithFormData() {
       return;
     }
 
-    emailjs.init("YOUR_PUBLIC_KEY"); // Use your actual EmailJS public key
+    emailjs.init("YOUR_PUBLIC_KEY");
 
     const params = {
-      to_email: "YOUR_EMAIL_TO", // Set your recipient email address
+      to_email: "YOUR_EMAIL_TO",
       from_name: name,
       from_email: email,
       message: message,
@@ -63,3 +63,8 @@ function sendEmailWithFormData() {
     console.error("Error[sendEmailWithFormData]:", e);
   }
 }
+
+
+document.querySelectorAll(".current-year").forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
