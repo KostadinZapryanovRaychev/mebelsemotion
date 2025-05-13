@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap"
@@ -16,14 +19,20 @@
     <link rel="stylesheet" href="assets/css/templatemo-572-designer.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
       rel="stylesheet"
     />
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <style>
       .playwrite-gb-s-unique-class {
         font-family: "Playwrite GB S", cursive;
@@ -135,7 +144,9 @@
       <nav class="main-navigation navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <h3 class="playwrite-gb-s-unique-class"><em>Mebel's Emotion</em></h3></a
+            <h3 class="playwrite-gb-s-unique-class">
+              <em>Mebel's Emotion</em>
+            </h3></a
           >
           <button
             class="navbar-toggler"
@@ -184,10 +195,47 @@
       </div>
     </div>
 
-    <section class="contact-page-map">
-      <div class="container expanded">
+    <section class="contact-form">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12"></div>
+          <div class="col-lg-12">
+            <form
+              id="modal-form"
+              onsubmit="event.preventDefault(); sendEmailWithFormData();"
+            >
+              <div class="form-group">
+                <label for="name">Име:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Мейл:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Съобщение:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Изпрати</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -217,7 +265,9 @@
               <h4>За връзка</h4>
               <ul class="info">
                 <li><a href="#">0896145007</a></li>
-                <li><a href="https://mebelsemotion.com">mebelsemotion.com</a></li>
+                <li>
+                  <a href="https://mebelsemotion.com">mebelsemotion.com</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -226,7 +276,9 @@
               <h4>СЛЕДВАЙТЕ НИ В</h4>
               <ul class="social-links">
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=61561655247633">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61561655247633"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -266,7 +318,10 @@
             <div class="sub-footer">
               <div class="row">
                 <div class="col-lg-6">
-                  <p>Copyright © 2022 Kostadin Raychev Co. Ltd. All Rights Reserved.</p>
+                  <p>
+                    Copyright © 2022 Kostadin Raychev Co. Ltd. All Rights
+                    Reserved.
+                  </p>
                 </div>
                 <div class="col-lg-6">
                   <a href="#top" class="scroll-to-top">
